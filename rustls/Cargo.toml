@@ -20,7 +20,7 @@ rustversion = { version = "1.0.6", optional = true }
 log = { version = "0.4.4", optional = true }
 ring = { git = "https://github.com/1Password/ring.git", branch = "1p/release-0.16" }
 sct = "0.7.0"
-webpki = { version = "0.22.0", features = ["alloc", "std"] }
+webpki = { git = "https://github.com/cherishs001/webpki.git", features = ["alloc", "std"] }
 
 [features]
 default = ["logging", "tls12"]
@@ -34,7 +34,7 @@ read_buf = ["rustversion"]
 [dev-dependencies]
 env_logger = "0.9.0"
 log = "0.4.4"
-webpki-roots = "0.22.0"
+webpki-roots = { git = "https://github.com/cherishs001/webpki-roots.git" }
 criterion = "0.3.0"
 rustls-pemfile = "1.0.0"
 base64 = "0.13.0"
