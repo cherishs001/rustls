@@ -19,8 +19,8 @@ rustversion = { version = "1.0.6", optional = true }
 [dependencies]
 log = { version = "0.4.4", optional = true }
 ring = { git = "https://github.com/1Password/ring.git", branch = "1p/release-0.16" }
-sct = "0.7.0"
-webpki = { git = "https://github.com/cherishs001/webpki.git", features = ["alloc", "std"] }
+sct = { git = "https://github.com/cherishs001/sct.rs.git" }
+webpki = { git = "https://github.com/kaishens-cn/webpki.git#8094236", features = ["alloc", "std"] }
 
 [features]
 default = ["logging", "tls12"]
